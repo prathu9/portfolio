@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html><head>
+	<title>prathamesh sawant</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+	<header>
+		<div class="mobile_nav_overlay">
+			<ul class="mobile_nav">
+				<a  class="active" onclick="change()" href="index.html"><li>HOME</li></a>
+				<a onclick="change()" href="#myproject"><li>MY PROJECTS</li></a>
+				<a onclick="change()" href="#about"><li>ABOUT</li></a>
+				<a onclick="change()" href="#contact"><li>CONTACT</li></a>
+			</ul>
+		</div>
+		<div class="header_img"></div>
+		<div class="nav_bar">
+			<ul class="nav_list">
+				<li class=nav_image><img src="./images/ps.jpg"
+					width="50px" height="50px"></li>
+				<a class="active" href="index.html"><li>HOME</li></a>
+				<a href="#myproject"><li>MY PROJECTS</li></a>
+				<a href="#about"><li>ABOUT</li></a>
+				<a href="#contact"><li>CONTACT</li></a>
+				<li class="menu_icon" onclick="change()">
+					<div class="menu_icon_bar"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="header_heading_container">
+			<div class="circle_image_container"></div>
+			<h1>Prathamesh Sawant</h1>
+			<h3>Front End Web Developer</h3>
+
+		</div>
+		
+		<div class="overlay"></div>
+	</header>
+
+	<section class="section">
+		<section class="keyskill_section">
+			<h1><span>KeySkills</span></h1>
+				<div class="keyskillImgContainer">
+					<img src="./images/HTML5Logo.svg">
+					<img src="./images/CSS3Logo.svg">
+					<img src="./images/JSLogo.svg">
+				</div>
+		</section>
+
+		<section id="myproject" class="myproject_section">
+			<h1><span>My Projects</span></h1>
+				<div class="myproject_list">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+		</section>
+		
+
+		
+		<section id="about" class="about_section">
+			<h1><span>About Me</span></h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section id="contact" class="contact_section">
+			<h1><span>Contact</span></h1>
+			<form id="contact_form">
+				<label>Name:</label>
+				<input id="name" type="text" name="name">
+				<label>Email:</label>
+				<input id="email" type="email" name="email">
+				<label>Message:</label>
+				<textarea id="message" name="message"></textarea>
+				<input id="submit_btn" type="submit" value="Submit">
+			</form>
+		</section>
+	</section>
+
+	<footer>
+		<div class="footer_section">
+			<ul class="social-media">
+				<a href="" target="blank"><li><span class='fab fa-facebook'></span><span class="social_media_text">Facebook</span></li></a>
+				<a href="https://github.com/prathu9" target="blank"><li><span class='fab fa-github-square'></span><span class="social_media_text">Github</span></li></a>
+				<a href="https://www.linkedin.com/in/prathu9/" target="blank"><li><span class='fab fa-linkedin'></span>
+				<span class="social_media_text">LinkedIn</span></li></a>
+			</ul>
+			<div class="copyright">Copyright &copy; 2018</div>
+	</footer>
+	<script src="./js/portfolio.js"></script>
+</body>
+</html>
