@@ -128,6 +128,7 @@ header{
 	height:50px;
 	z-index:2;
 	margin:auto 20px auto 0;
+	cursor:pointer;
 }
 
 .menu_icon_bar,
@@ -521,7 +522,6 @@ label{
 	}
 
 	.mobile_nav_overlay{
-
 		display:block;
 	}
 

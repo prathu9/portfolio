@@ -1,3 +1,10 @@
+const focusOnScroll = (item, index)=>{
+	item[0].className = index === 0?"active":"";
+	item[1].className = index === 1?"active":"";
+	item[2].className = index === 2?"active":"";
+	item[3].className = index === 3?"active":"";
+}
+
 (function(){
 	
 	let navUl=document.querySelector(".nav_bar ul");
@@ -16,72 +23,46 @@
 		if((document.body.scrollTop>0||
 			document.documentElement.scrollTop>0)
 			&&!mobile.matches){
-			navList[0].className="active";
-			navList[1].className="";
-			navList[2].className="";
-			navList[3].className="";
+			focusOnScroll(navList, 0);
 		}
 
 		if((document.body.scrollTop>700||
 			document.documentElement.scrollTop>700)
 			&&!mobile.matches){
-			navList[0].className="";
-			navList[1].className="active";
-			navList[2].className="";
-			navList[3].className="";
+			focusOnScroll(navList, 1);
 		}
 		if((document.body.scrollTop>1350||
 			document.documentElement.scrollTop>1350)
 			&&!mobile.matches){
-			navList[0].className="";
-			navList[1].className="";
-			navList[2].className="active";
-			navList[3].className="";
+			focusOnScroll(navList, 2);
 		}
 		if((document.body.scrollTop>1750||
 			document.documentElement.scrollTop>1750)
 			&&!mobile.matches){
-			navList[0].className="";
-			navList[1].className="";
-			navList[2].className="";
-			navList[3].className="active";
-
+			focusOnScroll(navList, 3);
 		}
 
 		//mobile
 		if((document.body.scrollTop>0||
 			document.documentElement.scrollTop>0)
 			&&mobile.matches){
-			mobilenavList[0].className="active";
-			mobilenavList[1].className="";
-			mobilenavList[2].className="";
-			mobilenavList[3].className="";
+			focusOnScroll(mobilenavList, 0);
 		}
 
 		if((document.body.scrollTop>700||
 			document.documentElement.scrollTop>700)
 			&&mobile.matches){
-			mobilenavList[0].className="";
-			mobilenavList[1].className="active";
-			mobilenavList[2].className="";
-			mobilenavList[3].className="";
+			focusOnScroll(mobilenavList, 1);
 		}
 		if((document.body.scrollTop>2160||
 			document.documentElement.scrollTop>2160)
 			&&mobile.matches){
-			mobilenavList[0].className="";
-			mobilenavList[1].className="";
-			mobilenavList[2].className="active";
-			mobilenavList[3].className="";
+			focusOnScroll(mobilenavList, 2);
 		}
 		if((document.body.scrollTop>2590||
 			document.documentElement.scrollTop>2590)
 			&&mobile.matches){
-			mobilenavList[0].className="";
-			mobilenavList[1].className="";
-			mobilenavList[2].className="";
-			mobilenavList[3].className="active";
-
+			focusOnScroll(mobilenavList, 3);
 		}
 	}
 })();
