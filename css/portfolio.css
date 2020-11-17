@@ -48,6 +48,7 @@ header{
 .header_img{
 	position:fixed;
 	width:100%;
+	min-width:320px;
 	height:100vh;
 	z-index:-5;
 	background: black url('../images/ps9.jpg') 80% 80%/cover no-repeat;
@@ -61,6 +62,7 @@ header{
 	position:fixed;
 	top:0;
 	width:100%;
+	min-width:320px;
 	min-height:50px;
 	z-index:1;
 }
@@ -77,6 +79,7 @@ header{
 }
 
 .nav_onscroll{
+	min-width:320px;
 	background-color:var(--background-color);
 	border-bottom:5px solid var(--border-color); /*#6C70E7*/
 	color:var(--font-color);
@@ -171,8 +174,6 @@ header{
     display:flex;
     align-items:center;
     position:relative;
-    top:5px;
-    right:25px;
     z-index:50;
 }
 
@@ -616,6 +617,15 @@ label{
 		display:block;
 	}
 
+	.theme-switch-wrapper span{
+		width:100px;
+		margin-right:0;
+	}
+
+	.theme-switch{
+		top:15px;
+	}
+
 	.mobile_nav_overlay{
 		display:block;
 	}
@@ -623,7 +633,6 @@ label{
 	.header_img{
 		background-color:black;
 		background: url('../images/darksky.jpg') 80% 80%/cover no-repeat;
-
 	}
 
 	.header_heading_container{
