@@ -3,20 +3,16 @@
 	const toggleIcon =  document.getElementById("toggle-icon");
 	//Dark Mode Styles
 	const darkMode = ()=>{
-	    // nav.style.backgroundColor = "rgb(0 0 0/50%)";
 	    toggleIcon.children[0].textContent = "Dark";
 	    toggleIcon.children[1].classList.replace("fa-sun","fa-moon");
 	    // imageMode("dark");
-	    // textBox.style.backgroundColor = "rgb(255 255 255/50%)";
 	}
 
 	//Light Mode Styles
 	const lightMode = ()=>{
-	    // nav.removeAttribute("style");
 	    toggleIcon.children[0].textContent = "Light";
 	    toggleIcon.children[1].classList.replace("fa-moon","fa-sun");
 	    // imageMode("light");
-	    // textBox.removeAttribute("style");
 	}
 
 
@@ -58,6 +54,7 @@
 
 
 const focusOnScroll = (item, index)=>{
+	console.log(index,item[index]);
 	item[0].className = index === 0?"active":"";
 	item[1].className = index === 1?"active":"";
 	item[2].className = index === 2?"active":"";
