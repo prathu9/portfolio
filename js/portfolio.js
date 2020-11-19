@@ -10,6 +10,7 @@ const focusOnScroll = (item, index)=>{
 	let navUl=document.querySelector(".nav_bar ul");
 	let navList=document.querySelectorAll(".nav_list a");
 	let mobilenavList=document.querySelectorAll(".mobile_nav a");
+	let smallDesktop=window.matchMedia("(max-width:1120px)");
 	let mobile=window.matchMedia("(max-width:784px)");
 	/*changing border of the navigation item in nav bar, 
 	when scrolled to that navigation item section 
@@ -41,6 +42,30 @@ const focusOnScroll = (item, index)=>{
 		if((document.body.scrollTop>1750||
 			document.documentElement.scrollTop>1750)
 			&&!mobile.matches){
+			focusOnScroll(navList, 3);
+		}
+
+		//Small Desktop
+		//mobile
+		if((document.body.scrollTop>0||
+			document.documentElement.scrollTop>0)
+			&&smallDesktop.matches&&!mobile.matches){
+			focusOnScroll(navList, 0);
+		}
+
+		if((document.body.scrollTop>700||
+			document.documentElement.scrollTop>700)
+			&&smallDesktop.matches&&!mobile.matches){
+			focusOnScroll(navList, 1);
+		}
+		if((document.body.scrollTop>2043||
+			document.documentElement.scrollTop>2043)
+			&&smallDesktop.matches&&!mobile.matches){
+			focusOnScroll(navList, 2);
+		}
+		if((document.body.scrollTop>2678||
+			document.documentElement.scrollTop>2678)
+			&&smallDesktop.matches&&!mobile.matches){
 			focusOnScroll(navList, 3);
 		}
 
