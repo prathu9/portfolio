@@ -1,0 +1,75 @@
+/* Dark Mode Switch */
+.theme-switch-wrapper{
+    display:flex;
+    align-items:center;
+    position:relative;
+    z-index:50;
+}
+
+.theme-switch-wrapper span{
+	font-family:roboto, sans-serif;
+	font-weight:700;
+    margin:10px;
+    font-size:1rem;
+}
+
+.toggle-text{
+    position:relative;
+    top:-4px;
+    right:5px;
+    color: var(--font-color);
+}
+
+.theme-switch{
+    display:inline-block;
+    width:60px;
+    height:34px;
+    position:relative;
+}
+
+.theme-switch input{
+    display:none;
+}
+
+.slider{
+    position:absolute;
+    top:5px;
+    right:5px;
+    bottom:0;
+    left:0;
+    cursor:pointer;
+    background-color:var(--border-color);
+    transition:0.4s;
+}
+
+.slider::before{
+    content:"";
+    position:absolute;
+    bottom:2px;
+    left:2px;
+    width:26px;
+    height:26px;
+    background-color:#fff;
+    transition:0.4s;
+}
+
+input:checked + .slider{
+    background-color: var(--border-color);
+}
+
+input:checked + .slider::before{
+    transform:translateX(26px);
+}
+
+.slider.round{
+    border-radius:34px;
+}
+
+.slider.round::before{
+    border-radius:50%;
+}
+
+.fas{
+    font-size:30px;
+    margin-right:5px;
+}

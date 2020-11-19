@@ -2,13 +2,33 @@
 <html><head>
 	<title>prathamesh sawant|Project</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="../css/project.css">
+	<link rel="stylesheet" type="text/css" href="../css/dark-light-mode.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 	<header>
-		
+		<nav class="nav-bar">
+			<div class="nav-image"><img class="logo" src="../images/ps_logo_light.jpg"
+					width="50px" height="50px" data-isMain="false">
+			</div>
+			<div class="header-title">
+				<h1>PROJECTS</h1>
+			</div>
+			<div class="theme-switch-wrapper">
+				<!-- Dark Mode Switch -->
+				<span id="toggle-icon" class="toggle-icon">
+				<span class="toggle-text">Light Mode</span>
+				<i class="fas fa-sun"></i>
+				</span>
+				<label class="theme-switch">
+				    <input type="checkbox">
+				    <div class="slider round"></div>
+				</label>
+			</div>
+		</nav>
 	</header>
+	<script src="../js/dark-light-mode.js"></script>
 </body>
 </html>

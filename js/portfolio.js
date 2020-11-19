@@ -1,60 +1,5 @@
-(function(){
-	const toggleSwitch = document.querySelector("input[type='checkbox']");
-	const toggleIcon =  document.getElementById("toggle-icon");
-	//Dark Mode Styles
-	const darkMode = ()=>{
-	    toggleIcon.children[0].textContent = "Dark";
-	    toggleIcon.children[1].classList.replace("fa-sun","fa-moon");
-	    // imageMode("dark");
-	}
-
-	//Light Mode Styles
-	const lightMode = ()=>{
-	    toggleIcon.children[0].textContent = "Light";
-	    toggleIcon.children[1].classList.replace("fa-moon","fa-sun");
-	    // imageMode("light");
-	}
-
-
-	// const imageMode = (color)=>{
-	//     image1.src=`image/undraw_Online_world_re_h4cb_${color}.svg`;
-	//     image2.src=`image/undraw_Mail_sent_re_0ofv_${color}.svg`;
-	//     image3.src=`image/undraw_camping_noc8_${color}.svg`;
-	// }
-
-	//Check Local Storage for Theme
-	(()=>{
-	    const currentTheme = localStorage.getItem("theme");
-	    if(currentTheme){
-	        document.documentElement.setAttribute("data-theme", currentTheme);
-	        if(currentTheme==="dark"){
-	            toggleSwitch.checked = true;
-	            darkMode();
-	        }
-	    }
-	})();
-
-	//Change Theme Dynamically
-	const changeTheme = (event)=>{
-	    if(event.target.checked){
-	        document.documentElement.setAttribute("data-theme", "dark");
-	        darkMode();
-	        localStorage.setItem("theme","dark");
-	    }
-	    else{
-	        document.documentElement.setAttribute("data-theme", "light");
-	        lightMode();
-	        localStorage.setItem("theme","light");
-	    }   
-	}
-
-	//Event Listener
-	toggleSwitch.addEventListener("change", changeTheme);
-})();
-
-
+//changing border of navigation item in nav bar, when moved to that navigation item section
 const focusOnScroll = (item, index)=>{
-	console.log(index,item[index]);
 	item[0].className = index === 0?"active":"";
 	item[1].className = index === 1?"active":"";
 	item[2].className = index === 2?"active":"";
@@ -62,13 +7,14 @@ const focusOnScroll = (item, index)=>{
 }
 
 (function(){
-	
 	let navUl=document.querySelector(".nav_bar ul");
 	let navList=document.querySelectorAll(".nav_list a");
 	let mobilenavList=document.querySelectorAll(".mobile_nav a");
 	let mobile=window.matchMedia("(max-width:784px)");
+	/*changing border of the navigation item in nav bar, 
+	when scrolled to that navigation item section 
+	*/
 	window.onscroll=function(){
-		
 		if(document.body.scrollTop>50||
 			document.documentElement.scrollTop>50){
 				navUl.className="nav_onscroll";
@@ -123,10 +69,15 @@ const focusOnScroll = (item, index)=>{
 	}
 })();
 
+//For mobile view
 let menuIcon=document.querySelector(".menu_icon_bar");
 let mobileNav=document.querySelector(".mobile_nav_overlay");
-function change(){
 
+/*Changing hamburger icon (menu icon bar) to close and 
+revert it and displaying mobile nav, when clicked on menu icon and 
+nav item in mobile view respectively.
+*/
+function change(){
 	if(menuIcon.getAttribute("class")==="menu_icon_bar"){
 		menuIcon.setAttribute("class","menu_icon_bar_change");
 		// mobileNav.style.display="block";
@@ -141,6 +92,7 @@ function change(){
 	}
 }
 
+//checking if view is changed to desktop view and hidding mobile nav.
 (function(){
 	let x=window.matchMedia("(min-width:784px)");
 	function changeScreen(x){
