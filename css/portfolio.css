@@ -356,16 +356,14 @@ header{
 	padding-bottom:50px;
 	display:flex;
 	justify-content:center;
+	 flex-wrap:wrap;
+}
 
-}
-p{
-	color:var(--font-color);
-	word-wrap:break-word;
-	font-size:2em;
-}
 .keyskillImgContainer img{
+	display: block;
 	width:100px;
 	height:100px;
+	margin:10px;
 }
 
 /*Project Section*/
@@ -557,6 +555,12 @@ p{
 	top:-50px;
 	left:-70px;
 	width:380px;
+}
+
+p{
+	color:var(--font-color);
+	word-wrap:break-word;
+	font-size:2em;
 }
 
 .about_section p{
