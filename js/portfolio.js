@@ -128,3 +128,43 @@ function change(){
 	x.addListener(changeScreen);
 
 })();
+
+
+(function(){
+	const toggleSwitch = document.querySelector("input[type='checkbox']");
+	const logo = document.querySelector(".logo");
+	const skillsLogo = document.querySelectorAll(".skills");
+
+	//function for changing logo of skills
+	const skillsLogoChange = (index, logo, color)=>{
+		skillsLogo[index].src=`./images/${logo}_${color}.svg`; 
+	}
+
+	//changing logo according to theme color
+	const imageMode = (color)=>{
+		if(logo.getAttribute("data-isMain")==="false"){
+			logo.src=`../images/ps_logo_${color}.jpg`;
+		}else{
+			logo.src=`./images/ps_logo_${color}.jpg`;
+		}
+		skillsLogoChange(0, "html5Logo", color);
+		skillsLogoChange(1, "css3Logo", color);
+		skillsLogoChange(2, "jsLogo", color);
+	}
+
+	//Check local storage for theme and change logo according to theme
+	function changeLogo(){
+		const currentTheme = localStorage.getItem("theme");
+		if(currentTheme==="dark"){
+			imageMode("dark");
+		}else if(currentTheme==="light"){
+			imageMode("light");
+		}
+	}
+
+	changeLogo(); //changing logo when page is refreshed
+
+	//Event Listener
+	//change logo when light and dark mode switch is toggled
+	toggleSwitch.addEventListener("change", changeLogo); 
+})();
