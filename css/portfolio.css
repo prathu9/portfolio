@@ -475,6 +475,23 @@ p{
 	margin:20px auto;
 }
 
+.project_tools{
+	margin-top:10px;
+	text-align: center;
+}
+
+.project_tools img{
+	width:35px;
+	height:35px;
+}
+
+.project_tools img:nth-child(2){
+	position:relative;
+	top:3px;
+	width:40px;
+	height:40px;
+}
+
 .myproject_btn .btn{
 	display:block;
 	width:150px;
