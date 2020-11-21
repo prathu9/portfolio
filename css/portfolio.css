@@ -182,6 +182,7 @@ header{
 	transform:translate(-50%,-50%) rotateZ(45deg);
 }
 
+/*Mobile Nav*/
 .menu_icon_bar:before,
 .menu_icon_bar:after,
 .menu_icon_bar_change:before{
@@ -309,6 +310,7 @@ header{
 }
 
 
+/*Section*/
 .section{
 	width:100%;
 	min-width:320px;
@@ -347,6 +349,7 @@ header{
 	border-bottom:2px solid var(--border-color); /*#1A0D65*/
 }
 
+/*Skill Section*/
 .keyskillImgContainer{
 	width:100%;
 	margin:auto;
@@ -365,6 +368,7 @@ p{
 	height:100px;
 }
 
+/*Project Section*/
 .myproject_section{
 	padding-bottom:40px;
 }
@@ -521,6 +525,7 @@ p{
 	background-color: var(--background-variant);
 }
 
+/*About Section*/
 .about_section{
 	text-align:center;
 }
@@ -560,6 +565,8 @@ p{
 	margin:20px auto;
 }
 
+
+/*Contact Section*/
 #contact_form{
 	display:flex;
 	flex-direction:column;
