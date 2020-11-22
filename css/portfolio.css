@@ -552,9 +552,8 @@ header{
 
 .about-image img{
 	position:relative;
-	top:-50px;
-	left:-70px;
-	width:380px;
+	left:-25px;
+	width:250px;
 }
 
 p{
