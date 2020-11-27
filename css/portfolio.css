@@ -628,6 +628,8 @@ label{
 	background-color:#888;
 }
 
+
+/*Footer Section*/
 .footer_section{
 	position:relative;
 	 min-height:40vh;
@@ -693,6 +695,7 @@ label{
 
 @media screen and (max-width:784px){
 
+	/*Header Section*/
 	.nav_bar{
 		height:50px;
 	}
@@ -713,6 +716,7 @@ label{
 		display:block;
 	}
 
+	/*Light to Dark Toggle Switch*/
 	.theme-switch-wrapper span{
 		margin-right:0;
 	}
@@ -758,6 +762,8 @@ label{
 		height:50px;
 	}
 
+	/*Skill Section*/
+
 	.keyskill_section,
 	.myproject_section,
 	.about_section,
@@ -772,6 +778,7 @@ label{
 		transition-delay:0s;
 	}
 
+	/*Contact Section*/
 	label,
 	#name,
 	#email,
@@ -779,6 +786,7 @@ label{
 		width:70%;
 	}
 
+	/*Footer Section*/
 	.social-media{
 		width:80%;
 		margin:auto;
