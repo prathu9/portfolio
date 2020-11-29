@@ -84,11 +84,13 @@ const focusOnScroll = (item, index)=>{
 		if((document.body.scrollTop>2160||
 			document.documentElement.scrollTop>2160)
 			&&mobile.matches){
+			console.log(document.body.scrollTop, document.documentElement.scrollTop);
 			focusOnScroll(mobilenavList, 2);
 		}
-		if((document.body.scrollTop>2590||
-			document.documentElement.scrollTop>2590)
+		if((document.body.scrollTop>3300||
+			document.documentElement.scrollTop>3300)
 			&&mobile.matches){
+			console.log(document.body.scrollTop, document.documentElement.scrollTop);
 			focusOnScroll(mobilenavList, 3);
 		}
 	}
