@@ -153,3 +153,64 @@ function change(){
 	//change logo when light and dark mode switch is toggled
 	toggleSwitch.addEventListener("change", ()=>{changeLogo(imageMode)}); 
 })();
+
+//Submitting form
+(function(){
+
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+	    apiKey: "AIzaSyArBm5el849hwEozoGHd67XMGt2N7miXv8",
+	    authDomain: "portfolio-project-608d1.firebaseapp.com",
+	    databaseURL: "https://portfolio-project-608d1.firebaseio.com",
+	    projectId: "portfolio-project-608d1",
+	    storageBucket: "portfolio-project-608d1.appspot.com",
+	    messagingSenderId: "53294103964",
+	    appId: "1:53294103964:web:ffb1fa7426d39ca0b25c59"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	//Reference messages collection
+	const messageRef = firebase.database().ref("messages");
+	const form = document.getElementById("contact_form");
+	const name = document.getElementById("name");
+	const email = document.getElementById("email");
+	const message = document.getElementById("message");
+	const formOkBtn = document.querySelector(".form_popup_ok_btn");
+	const formPopUp = document.querySelector(".popup_overlay");
+
+	const submitForm = (e)=>{
+		e.preventDefault();
+	
+		//Get values
+		const nameValue = name.value;
+		const emailValue = email.value;
+		const messageValue = message.value;
+
+		//Save message
+		saveMessage(nameValue, emailValue, messageValue);
+
+		//Clear All input fields in form
+		form.reset();
+
+		//Display Pop Up
+		formPopUp.style.display = "flex";
+	}
+
+	// save messages to firebase
+	const saveMessage = (name, email, message)=>{
+		const newMessageRef = messageRef.push();
+
+		newMessageRef.set({
+			name:name, email:email, message:message
+		});
+	}
+
+	
+
+	form.addEventListener("submit", submitForm);
+	//Click ok button to hide Pop Up
+	formOkBtn.addEventListener("click", function(){
+		formPopUp.style.display = "none";
+	});
+})();
+

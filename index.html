@@ -133,14 +133,22 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</section>
 		<section id="contact" class="contact_section">
+			<div class="popup_overlay">
+				<div class="form_contact_popup">
+					<h1>Message Recieved!!!</h1>
+					<div>
+						<button class="form_popup_ok_btn">Ok</button>	
+					</div>
+				</div>
+			</div>
 			<h1><span>Contact</span></h1>
 			<form id="contact_form" method="get" enctype="text/plain">
 				<label>Name:</label>
-				<input id="name" type="text" name="name">
+				<input id="name" type="text" name="name" required>
 				<label>Email:</label>
-				<input id="email" type="email" name="email">
+				<input id="email" type="email" name="email" required>
 				<label>Message:</label>
-				<textarea id="message" name="message"></textarea>
+				<textarea id="message" name="message" required></textarea>
 				<input id="submit_btn" type="submit" value="Submit">
 			</form>
 		</section>
@@ -158,6 +166,9 @@
 	</footer>
 	<script src="./js/dark-light-mode.js"></script>
 	<script src="./js/modify-logo.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
 	<script src="./js/portfolio.js"></script>
 </body>
 </html>
