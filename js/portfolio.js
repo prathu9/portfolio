@@ -11,7 +11,8 @@ const focusOnScroll = (item, index)=>{
 	let navList=document.querySelectorAll(".nav_list a");
 	let mobilenavList=document.querySelectorAll(".mobile_nav a");
 	let smallDesktop=window.matchMedia("(max-width:1120px)");
-	let mobile=window.matchMedia("(max-width:784px)");
+	let bigMobile=window.matchMedia("(max-width:784px)");
+	let mobile=window.matchMedia("(max-width:700px)");
 	/*changing border of the navigation item in nav bar, 
 	when scrolled to that navigation item section 
 	*/
@@ -45,8 +46,7 @@ const focusOnScroll = (item, index)=>{
 			focusOnScroll(navList, 3);
 		}
 
-		//Small Desktop
-		//mobile
+		//Small screen Desktop
 		if((document.body.scrollTop>0||
 			document.documentElement.scrollTop>0)
 			&&smallDesktop.matches&&!mobile.matches){
@@ -69,6 +69,29 @@ const focusOnScroll = (item, index)=>{
 			focusOnScroll(navList, 3);
 		}
 
+		//Big size mobile
+		if((document.body.scrollTop>0||
+			document.documentElement.scrollTop>0)
+			&&bigMobile.matches&&!mobile.matches){
+			focusOnScroll(mobilenavList, 0);
+		}
+
+		if((document.body.scrollTop>700||
+			document.documentElement.scrollTop>700)
+			&&bigMobile.matches&&!mobile.matches){
+			focusOnScroll(mobilenavList, 1);
+		}
+		if((document.body.scrollTop>2043||
+			document.documentElement.scrollTop>2043)
+			&&bigMobile.matches&&!mobile.matches){
+			focusOnScroll(mobilenavList, 2);
+		}
+		if((document.body.scrollTop>2678||
+			document.documentElement.scrollTop>2678)
+			&&bigMobile.matches&&!mobile.matches){
+			focusOnScroll(mobilenavList, 3);
+		}
+
 		//mobile
 		if((document.body.scrollTop>0||
 			document.documentElement.scrollTop>0)
@@ -84,13 +107,11 @@ const focusOnScroll = (item, index)=>{
 		if((document.body.scrollTop>2160||
 			document.documentElement.scrollTop>2160)
 			&&mobile.matches){
-			console.log(document.body.scrollTop, document.documentElement.scrollTop);
 			focusOnScroll(mobilenavList, 2);
 		}
-		if((document.body.scrollTop>3300||
-			document.documentElement.scrollTop>3300)
+		if((document.body.scrollTop>3000||
+			document.documentElement.scrollTop>3000)
 			&&mobile.matches){
-			console.log(document.body.scrollTop, document.documentElement.scrollTop);
 			focusOnScroll(mobilenavList, 3);
 		}
 	}
