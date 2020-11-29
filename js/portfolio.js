@@ -180,7 +180,13 @@ function change(){
 
 	const submitForm = (e)=>{
 		e.preventDefault();
-	
+		
+		if(sessionStorage.getItem("submitted")){
+			alert("Message Already Sent");
+			form.reset();
+			return;
+		}
+
 		//Get values
 		const nameValue = name.value;
 		const emailValue = email.value;
@@ -191,7 +197,7 @@ function change(){
 
 		//Clear All input fields in form
 		form.reset();
-
+		sessionStorage.setItem("submitted", true);
 		//Display Pop Up
 		formPopUp.style.display = "flex";
 	}
