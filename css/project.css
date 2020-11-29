@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 :root{
 	--font-color:#000;
 	--font-color-alt:#fff;
@@ -23,17 +25,21 @@
 *{
 	margin:0;
 	padding:0;
+	box-sizing:border-box;
 }
 
 html{
 	width:100%;
+	min-width:320px;
 }
 
 body{
+	margin:auto;
 	width:100%;
+	min-width:320px;
 	min-height:500px;
 	background-color:#D9DFE4;
-	margin:auto;
+	font-family: 'PT Serif', serif;
 }
 
 /*Header Section*/
@@ -50,7 +56,7 @@ header{
 	align-items: center;
 	width:100%;
 	min-width:320px;
-	padding:0 10px;
+	padding:0 0 0 5px;
 	border-bottom:5px solid var(--border-color);
 	background-color: var(--background-color);
 	color:var(--font-color);
@@ -69,7 +75,7 @@ header{
 
 /*Light to Dark Toggle Switch*/
 .theme-switch-wrapper{
-	margin-right:20px;
+	margin-right:5px;
 }
 
 .theme-switch-wrapper .slider{
@@ -79,9 +85,82 @@ header{
 /*Section*/
 .section{
 	margin:80px auto 20px auto;
-	width:95%;
-	min-height:100vw;
+	padding:30px 0;
+	width:98%;
+	min-height:400px;
 	background-color: var(--background-color);
+}
+
+/*Project Section*/
+.project-container{
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding:40px 0;
+}
+
+.project-container div{
+	width:45%;
+	min-width:300px;
+}
+
+.project-container h1{
+	color:var(--font-color);
+}
+
+.project-image{
+	margin-bottom:20px;
+	text-align: center;
+}
+
+.project-image img{
+	width:200px;
+	box-shadow: 
+		0 1px 5px 5px var(--border-variant);
+}
+
+.project-info h1,
+.project-info h3,
+.project-info p{
+	margin-bottom:10px;
+}
+
+.description h3{
+	color:var(--font-color);
+}
+
+.description p{
+	color:var(--font-color);
+}
+
+.project-info{
+	display:flex;
+	flex-direction: column;
+}
+
+.project-links{
+	display: flex;
+	justify-content: space-around;
+	margin:20px 0;
+	width:100%;
+}
+
+.project-links a{
+	margin-right:10px;
+	padding:10px;
+	/*min-width:100px;
+	min-height:20px;*/
+	color:var(--font-color);
+	border:2px solid var(--border-color);
+	font-family: roboto, 'sans-serif';
+	font-size:18px;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.project-links a:hover{
+	background-color: var(--background-variant);
 }
 
 /*Footer Section*/
@@ -148,11 +227,24 @@ header{
 	font-family:"open sans", sans-serif;
 }
 
+@media screen and (max-width:625px){
+	.project-info h1,
+	.project-info h3,
+	.project-info p{
+		text-align: center;
+	}
+}
+
 @media screen and (max-width:418px){
 	
 	/*Header section*/
 	h1{
 		font-size:25px;
+	}
+
+	.nav-image .logo{
+		width:40px;
+		height:40px;
 	}
 
 	/*Light to Dark Toggle Switch*/
