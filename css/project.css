@@ -115,7 +115,7 @@ header{
 }
 
 .project-image img{
-	width:200px;
+	width:400px;
 	box-shadow: 
 		0 1px 5px 5px var(--border-variant);
 }
@@ -225,6 +225,12 @@ header{
 	font-size:1.3em;
 	max-width:1349px;
 	font-family:"open sans", sans-serif;
+}
+
+@media screen and (max-width:784px){
+	.project-image img{
+		width:200px;
+	}
 }
 
 @media screen and (max-width:625px){
