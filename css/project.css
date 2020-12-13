@@ -85,7 +85,7 @@ header{
 
 /*Section*/
 .section{
-	margin:80px auto 20px auto;
+	margin:75px auto 5px auto;
 	padding:30px 0;
 	width:98%;
 	min-height:400px;
@@ -101,9 +101,15 @@ header{
 	padding:100px 0 40px 0;
 }
 
-.project-container div{
+.project-container > div{
 	width:45%;
 	min-width:300px;
+	font-size:1.1rem;
+}
+
+.project-container div a{
+	color:var(--border-color);
+	text-decoration: none;
 }
 
 .project-container h1{
@@ -132,6 +138,7 @@ header{
 }
 
 .description p{
+	width:80%;
 	color:var(--font-color);
 }
 
@@ -142,13 +149,14 @@ header{
 
 .project-links{
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	margin:20px 0;
 	width:100%;
+	min-width:300px;
 }
 
 .project-links a{
-	margin-right:10px;
+	margin-right:20px;
 	padding:10px;
 	/*min-width:100px;
 	min-height:20px;*/
@@ -229,8 +237,25 @@ header{
 }
 
 @media screen and (max-width:784px){
+	.section{
+		margin:60px auto 5px auto;
+	}
+
+	.project-container{
+		padding-top:50px;
+	}
+
 	.project-image img{
 		width:200px;
+	}
+
+	.description p{
+		width:100%;
+	}
+
+	.project-links{
+		justify-content: center;
+		margin-right:10px;
 	}
 }
 
