@@ -62,12 +62,7 @@ header{
 	height:100vh;
 	z-index:-5;
 	background-color: #000;
-	/*background: black url('../images/ps9.jpg') 80% 80%/cover no-repeat;*/
-}
-
-.header_img img{
-	width:99%;
-	height:100%;
+	background: black url('../images/ps9.jpg') 80% 80%/cover no-repeat;
 }
 
 .nav_bar{
