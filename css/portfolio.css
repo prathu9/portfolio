@@ -61,7 +61,13 @@ header{
 	min-width:320px;
 	height:100vh;
 	z-index:-5;
-	background: black url('../images/ps9.jpg') 80% 80%/cover no-repeat;
+	background-color: #000;
+	/*background: black url('../images/ps9.jpg') 80% 80%/cover no-repeat;*/
+}
+
+.header_img img{
+	width:99%;
+	height:100%;
 }
 
 .nav_bar{
