@@ -815,6 +815,12 @@ label{
 		transition-delay:0s;
 	}
 
+	/*About Section*/
+	.about_section p{
+		font-size:1.3em;
+		width:70%;
+	}
+
 	/*Contact Section*/
 	label,
 	#name,
