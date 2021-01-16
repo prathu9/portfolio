@@ -1,14 +1,4 @@
 (function(){
-	const isAlertDisplayed = sessionStorage.getItem("isAlertDisplayed");
-	if(!isAlertDisplayed){
-		alert("Currently working on a React project!");
-	}
-	
-	sessionStorage.setItem("isAlertDisplayed", true);
-})();
-
-
-(function(){
 	const toggleSwitch = document.querySelector("input[type='checkbox']");
 	const toggleIcon =  document.getElementById("toggle-icon");
 
