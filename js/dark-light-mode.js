@@ -1,4 +1,4 @@
-
+alert("Currently working on a React project!");
 (function(){
 	const toggleSwitch = document.querySelector("input[type='checkbox']");
 	const toggleIcon =  document.getElementById("toggle-icon");
