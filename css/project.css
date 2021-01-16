@@ -49,6 +49,7 @@ header{
 	top:0;
 	display:block;
 	width: 100%;
+	z-index:10;
 }
 
 .nav-bar{
@@ -85,11 +86,31 @@ header{
 
 /*Section*/
 .section{
+	position:relative;
 	margin:75px auto 5px auto;
 	padding:30px 0;
 	width:98%;
 	min-height:400px;
 	background-color: var(--background-color);
+}
+
+.back-to-home-btn{
+	position:absolute;
+	top:20px;
+	left:20px;
+}
+
+.back-to-home-btn a{
+	color:var(--font-color-alt);
+	background-color: var(--border-color);
+	text-decoration: none;
+	padding:5px 10px;
+	border-radius:5px;
+}
+
+.back-to-home-btn a:hover{
+	color:var(--font-color);
+	background-color: var(--background-color-alt);
 }
 
 /*Project Section*/
@@ -166,6 +187,7 @@ header{
 	font-size:18px;
 	text-decoration: none;
 	cursor:pointer;
+	transition:all 0.9s;
 }
 
 .project-links a:hover{
@@ -173,6 +195,33 @@ header{
 }
 
 /*Footer Section*/
+footer{
+	position: relative;
+}
+
+.back-to-top{
+	position:absolute;
+	top:-45px;
+	right:25px;
+}
+
+.back-to-top-btn{
+	color:var(--font-color-alt);
+	background-color: var(--border-color);
+	text-decoration: none;
+	padding:5px 10px;
+	border-radius:5px;
+	font-family: 'PT Serif', serif;
+	font-size:16px;
+	border:none;
+	cursor:pointer;
+	outline:none;
+}
+
+.back-to-top-btn:hover{
+	color:var(--font-color);
+	background-color: var(--background-color-alt);
+}
 .footer_section{
 	position:relative;
 	 min-height:40vh;

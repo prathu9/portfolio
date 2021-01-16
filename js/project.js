@@ -10,6 +10,7 @@
 
 (function(){
 	const images = document.querySelectorAll(".project-image img");
+	const backToTopBtn = document.querySelector(".back-to-top-btn");
 	let x=window.matchMedia("(max-width:784px)");
 	function changeImage(x){
 		if(x.matches){
@@ -26,6 +27,13 @@
 			images[4].src = `../images/quote-generator-desktop.jpg`;
 		}	
 	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0; // For Safari
+	  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
 	changeImage(x);
 	x.addListener(changeImage);
+	backToTopBtn.addEventListener("click",topFunction);
 })();
