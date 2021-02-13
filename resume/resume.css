@@ -26,6 +26,7 @@ body{
 }
 
 .section1{
+	position:relative;
 	width:35%;
 	background-color:#172E86;
 }
@@ -84,12 +85,14 @@ body{
 	margin-right:50px;
 }
 
-.fas, .far{
-	color:#fff;
-
+.bi{
+	font-size:18px;
 }
 
 .footer{
+	position:absolute;
+	bottom:0;
+	left:25%;
 	color:#fff;
 	padding:10px;
 	margin-top:10px;
@@ -101,6 +104,58 @@ body{
 	width:65%;
 	padding:10px 10px 10px 20px;
 	background-color:#F4F5F7;
+}
+
+.careerObjective{
+	position:relative;
+}
+
+.download-container{
+	position: absolute;
+	top:-5px;
+	right:10px;
+}
+
+.download-btn{
+	display:inline-block;
+	padding:2px 10px;
+	border:2px solid #000;
+	cursor:pointer;
+}
+
+.download-btn:hover{
+	box-shadow: 1px 1px 8px rgba(180,180,180,0.8),
+				-1px 1px 8px rgba(180,180,180,0.8),
+				1px -1px 8px rgba(180,180,180,0.8),
+				-1px -1px 8px rgba(180,180,180,0.8);
+}
+
+.bi-download{
+	font-size:20px;
+}
+
+.download-popup{
+	display:none;
+	position:absolute;
+	bottom:-50px;
+	right:0;
+	border-radius:5px;
+	background-color: rgba(8,8,8,0.8);
+	padding:10px;
+	color:#fff;
+	transition:all 2s;
+}
+
+.download-popup:after{
+	content:"";
+	display:inherit;
+	width:10px;
+	height:10px;
+	background-color: inherit;
+	position:absolute;
+	top:-5px;
+	right:5px;
+	transform:rotate(45deg);
 }
 
 .careerObjective h2,

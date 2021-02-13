@@ -1,0 +1,7 @@
+[
+  {
+    "origin": ["https://prathu9.github.io/portfolio/resume/"],
+    "method": ["GET"],
+    "maxAgeSeconds": 3600
+  }
+]
