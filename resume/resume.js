@@ -22,17 +22,41 @@
 
   var resume = storageRef.child("resume.pdf");
 
+  const downloadBtn = document.querySelector(".download-btn");
+  const downloadAuthContainer = document.querySelector(".download-auth-container");
+  const downloadAuthBtn = document.querySelector(".download-auth-btn");
+  const passwordInput = document.querySelector(".download-auth");
 
-  (()=>{resume.getDownloadURL()
+  const authenticate = ()=>{
+    firebase.auth().signInWithEmailAndPassword(
+    "portfoliojs@ps.com", passwordInput.value)
+    .then((userCredential)=>resume.getDownloadURL())
     .then((url) => {
-      const downloadBtn = document.querySelector(".download-btn");
-      downloadBtn.href=url;
-      downloadBtn.target="blank";
+      window.open(url);
     })
     .catch((error) => {
       // Handle any errors
-      console.log(error);})
-  })();
+      if(error.code==="auth/wrong-password"){
+          passwordInput.value="";
+          alert("Please enter correct password");
+      }
+      else{
+        console.log(error);
+      }
+    })
+    passwordInput.value="";
+    showDownloadAuth();
+  }
+
+  const showDownloadAuth = ()=>{
+    const downloadAuthDisplay = downloadAuthContainer.style.display;
+    downloadAuthContainer.style.display = downloadAuthDisplay==="flex"?"none":"flex";
+  }
+
+  //Event Listener
+  downloadBtn.addEventListener("click", showDownloadAuth);
+  downloadAuthBtn.addEventListener("click", authenticate);
+
 
   (()=>{
     const downloadPopUp = document.querySelector(".download-popup");
