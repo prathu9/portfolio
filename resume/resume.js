@@ -28,7 +28,6 @@
       const downloadBtn = document.querySelector(".download-btn");
       downloadBtn.href=url;
       downloadBtn.target="blank";
-      console.log(downloadBtn);
     })
     .catch((error) => {
       // Handle any errors
