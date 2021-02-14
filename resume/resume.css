@@ -6,6 +6,7 @@
 
 html{
 	width:100%;
+	min-width:450px;
 	height:1400px;
 }
 

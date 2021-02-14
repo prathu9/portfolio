@@ -235,7 +235,6 @@ function change(){
 	}
 
 	
-
 	form.addEventListener("submit", submitForm);
 	//Click ok button to hide Pop Up
 	formOkBtn.addEventListener("click", function(){

@@ -65,6 +65,25 @@ header{
 	background: black url('../images/ps9.jpg') 80% 80%/cover no-repeat;
 }
 
+.resume-btn{
+	display:inline-block;
+	margin:10px;
+	padding:8px 15px;
+	color:#000;
+	text-decoration:none;
+	font-size:24px;
+	border:2px solid #000;
+	background-color:rgba(166, 180, 249 ,0.8);
+	border-radius:8px;
+	transition:all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+}
+
+.resume-btn:hover{
+	color:#fff;
+	background-color:rgba(3, 22, 118,0.8);
+}
+
 .nav_bar{
 	position:fixed;
 	top:0;
@@ -249,7 +268,7 @@ header{
 	width:50%;
 	height:120px;
 	color:white;
-	bottom:100px;
+	bottom:200px;
 	left:50%;
 	transform:translateX(-50%);
 	animation:scrollupHeaderHeading 1s ease-out forwards;
@@ -301,7 +320,7 @@ header{
 
 @keyframes scrollupHeaderHeading{
 	0%{
-      	transform:translateY(250px);
+      	transform:translateY(350px);
       	opacity:0.3;
 	}
 	100%{
@@ -798,6 +817,12 @@ label{
 	.circle_image_container img{
 		width:50px;
 		height:50px;
+	}
+
+	.resume-btn{
+		position:absolute;
+		left:50%;
+		transform:translateX(-50%);
 	}
 
 	/*Skill Section*/
