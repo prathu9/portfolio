@@ -56,7 +56,11 @@
   //Event Listener
   downloadBtn.addEventListener("click", showDownloadAuth);
   downloadAuthBtn.addEventListener("click", authenticate);
-
+  passwordInput.addEventListener("keypress", (e)=>{
+    if(e.keyCode === 13){
+      authenticate();
+    }
+  });
 
   (()=>{
     const downloadPopUp = document.querySelector(".download-popup");
