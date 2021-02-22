@@ -37,8 +37,9 @@
     .catch((error) => {
       // Handle any errors
       if(error.code==="auth/wrong-password"){
-          passwordInput.value="";
           alert("Please enter correct password");
+      }else if(error.code==="auth/network-request-failed"){
+          alert("Please check your network connection");
       }
       else{
         console.log(error);
