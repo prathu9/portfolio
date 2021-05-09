@@ -344,6 +344,11 @@ footer{
 		padding-left:0;
 	}
 
+	/*Section*/
+	#canvas{
+		display: none;
+	}
+
 	/*Footer Section*/
 	.social-media li{
 		min-width:100%;
