@@ -856,6 +856,11 @@ label{
 		transform:translateX(-50%);
 	}
 
+	/*Section*/
+	#canvas{
+		display: none;
+	}
+
 	/*Skill Section*/
 
 	.keyskill_section,
