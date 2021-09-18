@@ -604,6 +604,7 @@ p{
 	color:var(--font-color);
 	word-wrap:break-word;
 	font-size:2em;
+	padding:5px 20px 20px 20px;
 }
 
 .about_section p{
