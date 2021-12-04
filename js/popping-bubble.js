@@ -60,7 +60,6 @@ const animate = () => {
     for(let i=0; i < particlesArray.length; i++){
         particlesArray[i].update();
     }
-    console.log(isMouseEntered)
 }
 
 const createParticles = () => {

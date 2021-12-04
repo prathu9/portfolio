@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
 	<title>prathamesh sawant</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <meta property="og:title" content="Prathamesh Sawant" />
@@ -53,10 +54,9 @@
 			<h3>Front End Web Developer</h3>
 			<a class="resume-btn" href="./resume/resume.html" target="blank">Resume</a>
 		</div>
-		
 		<div class="overlay"></div>
 	</header>
-
+	
 	<section class="section">
 		<div class="section-container">
 			<canvas id="canvas"></canvas>
@@ -157,7 +157,7 @@
 			</section>
 		</div>
 	</section>
-
+	
 	<footer>
 		<div class="footer_section">
 			<ul class="social-media">
@@ -168,6 +168,7 @@
 			</ul>
 			<div class="copyright">Copyright &copy; 2021</div>
 	</footer>
+	
 	<script src="./js/dark-light-mode.js"></script>
 	<script src="./js/modify-logo.js"></script>
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -176,5 +177,10 @@
 	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js"></script>
 	<script src="./js/portfolio.js"></script>
 	<script src="./js/popping-bubble.js"></script>
+	<!-- Document scroll to top after page refresh -->
+	<script>
+		setTimeout(()=>{
+		window.scrollTo(0,0)}, 50);
+	</script>
   </body>
 </html>

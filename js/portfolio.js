@@ -242,3 +242,21 @@ function change(){
 	});
 })();
 
+(function(){
+	const header = document.querySelector("header");
+	const headerImg = document.querySelector(".header_img");
+	const midPointX = header.clientWidth/2;
+	const midPointY = header.clientHeight/2;
+	console.log(midPointX, midPointY)
+	let mousePoint = {
+		x: 0,
+		y: 0
+	}
+	header.addEventListener("mousemove", (e)=>{
+		mousePoint.x = - (e.clientX - midPointX);
+		mousePoint.y = - (e.clientY - midPointY);
+		headerImg.style.transform = 
+		`translate(${mousePoint.x/20}px, ${mousePoint.y/20}px)`;
+	})
+})();
+

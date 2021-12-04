@@ -54,14 +54,17 @@ header{
 	/*background: black url('../images/ps9.jpg') 80% 80%/cover no-repeat fixed;*/
 }
 
+
+
 .header_img{
 	position:fixed;
-	left:0;
-	width:100vw;
+	left:-80px;
+	width: 120vw;
 	min-width:320px;
-	height:100vh;
+	height:120vh;
 	z-index:-5;
 	background-color: #000;
+	transition: all 0.5s ease;
 	background: black url('../images/ps9.jpg') 80% 80%/cover no-repeat;
 }
 
