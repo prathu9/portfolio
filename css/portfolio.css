@@ -324,15 +324,15 @@ header{
 .section{
 	width:100%;
 	min-width:320px;
-	/* background-color:#BFB8B7; */
-	background-color: var(--border-color);
+	background-color:#BFB8B7;
+	/* background-color: var(--border-color); */
 	margin:0;
 	padding:5px 0px 5px 0px;
 }
 
 .section-container{
 	position:relative;
-	width:95%;
+	width:98%;
 	min-width:320px;
 	background-color:var(--background-color);
 	margin:auto;
