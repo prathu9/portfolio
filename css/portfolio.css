@@ -120,6 +120,7 @@ header{
 	color:var(--font-color);
 	margin:5px 5px 5px 0;
 	padding:15px 5px;
+	border-radius:8px;
 }
 
 .nav_list a:hover{
