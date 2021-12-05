@@ -1,3 +1,26 @@
+
+:root{
+	--font-color:#000;
+	--font-color-alt:#fff;
+	--background-color:#fff;
+	--background-color-alt: #91D6E6;
+	--background-variant:rgba(0, 102, 204, 0.5);
+	--border-color:#0066cc; 
+	--border-color-alt:#1A0D65;
+	--border-variant:rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"]{
+	--font-color:#fff;
+	--font-color-alt:#000;
+	--background-color:#000;
+	--background-color-alt: #3399ff;
+	--background-variant:rgba(0, 204, 204, 0.5);
+	--border-color:#00cccc; /*#ff9933*/
+	--border-color-alt:#1A0D65;
+	--border-variant:rgba(255,255,255,0.5);
+}
+
 /* Dark Mode Switch */
 .theme-switch-wrapper{
     display:flex;
@@ -10,7 +33,7 @@
 .theme-switch-wrapper span{
 	font-family:roboto, sans-serif;
 	font-weight:700;
-    margin:10px;
+    margin:10px 10px 10px 5px;
     font-size:1rem;
 }
 

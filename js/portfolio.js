@@ -167,6 +167,8 @@ function change(){
 		skillsLogoChange(0, "html5Logo", color);
 		skillsLogoChange(1, "css3Logo", color);
 		skillsLogoChange(2, "jsLogo", color);
+		skillsLogoChange(4, "reduxLogo", color);
+		skillsLogoChange(5, "reactRouterLogo", color);
 	}
 
 	const changeLogo = _modifyLogo; //Assiging logo change function to changeLogo from logo library
@@ -247,7 +249,6 @@ function change(){
 	const headerImg = document.querySelector(".header_img");
 	const midPointX = header.clientWidth/2;
 	const midPointY = header.clientHeight/2;
-	console.log(midPointX, midPointY)
 	let mousePoint = {
 		x: 0,
 		y: 0

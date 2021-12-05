@@ -4,14 +4,12 @@
 
 	//Dark Mode Styles
 	const darkMode = ()=>{
-	    toggleIcon.children[0].textContent = "Dark";
-	    toggleIcon.children[1].classList.replace("fa-sun","fa-moon");
+	    toggleIcon.children[0].classList.replace("fa-sun","fa-moon");
 	}
 
 	//Light Mode Styles
 	const lightMode = ()=>{
-	    toggleIcon.children[0].textContent = "Light";
-	    toggleIcon.children[1].classList.replace("fa-moon","fa-sun");
+	    toggleIcon.children[0].classList.replace("fa-moon","fa-sun");
 	}
 
 	//Check Local Storage for Theme
