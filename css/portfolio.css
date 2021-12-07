@@ -749,7 +749,7 @@ label{
 }
 
 .social-media li{
-	width:150px;
+	width:200px;
 	min-width:100px;
 	flex-basis:1;
 	flex-shrink:0;
@@ -757,17 +757,33 @@ label{
 }
 
 .social-media li .fab{
-	font-size:1.8em;
-	padding-right:10px;
+	font-size:1.85em;
+	width:25px;
+	height:25px;
+	line-height:25px;
 	color:#555;
+	padding:0;
+	border-radius:2px;
+	transition:all 0.2s;
 }
 
 .social-media li .social_media_text{
 	font-size:1.2em;
+	margin-left:10px;
 }
 
-.social-media li:hover span{
-	color:#fff;
+.social-media a:nth-child(1):hover .fab{
+	color: #f48024;
+}
+
+.social-media a:nth-child(2):hover .fab{
+	color: rgb(0,0,0);
+	background-color: #fff;
+}
+
+.social-media a:nth-child(3):hover .fab{
+	color: rgb(40,103,178);
+	background-color: #fff;
 }
 
 .copyright{
