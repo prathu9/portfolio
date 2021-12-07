@@ -4,7 +4,7 @@
 	 viewBox="0 0 380 380" xml:space="preserve">
 <style type="text/css">
 	#XMLID_1_{
-		transform:translate(-100px, -100px);
+		transform:translate(-65px, -100px);
 	}
 	.st1{fill:#D0021B;}
 </style>
@@ -18,9 +18,9 @@
 		c11.9,9.2,27.9,2.5,45.8,11.2c5.7,2.6,10.6,6.8,14,12c3.4,5.2,5.4,11.4,5.4,18c0,15.6-10.9,28.6-25.6,32.2
 		c-15,5.4-27.1,0.1-37.8,8.3c-12.1,9.2-5.6,24.6-15.4,40.9c-5.6,10.7-16.9,18.1-30,18.1c-18.6,0-33.7-14.8-33.7-33.1
 		c0-13.3,8-24.8,19.4-30c17.9-8.7,33.9-2,45.8-11.2C289.3,269.7,290.7,261.5,290.7,250.9z"/>
-	<text xml:space="preserve" font-family="sans-serif" font-size="75" font-style="normal" font-weight="900" 
+	<text xml:space="preserve" font-family="sans-serif" font-size="50" font-style="normal" font-weight="900" 
     style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; 
     stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;">
-    <tspan x="0" y="120%">React Router</tspan></text>
+    <tspan x="18%" y="110%">React Router</tspan></text>
 </g>
 </svg>
