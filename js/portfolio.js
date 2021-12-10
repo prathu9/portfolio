@@ -225,6 +225,7 @@ function change(){
 		sessionStorage.setItem("submitted", true);
 		//Display Pop Up
 		formPopUp.style.display = "flex";
+		document.body.style.overflow = "hidden";
 	}
 
 	// save messages to firebase
@@ -241,6 +242,7 @@ function change(){
 	//Click ok button to hide Pop Up
 	formOkBtn.addEventListener("click", function(){
 		formPopUp.style.display = "none";
+		document.body.style.overflow = "initial";
 	});
 })();
 
