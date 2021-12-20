@@ -36,6 +36,5 @@
 	  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 	}
 	changeImage(x);
-	x.addListener(changeImage);
 	backToTopBtn.addEventListener("click",topFunction);
 })();
