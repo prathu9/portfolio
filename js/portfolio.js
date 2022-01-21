@@ -148,7 +148,7 @@ function change(){
 		document.body.style.overflow="initial";
 		mobileNav.style.width="0";
 	}
-	x.addListener(changeScreen);
+	x.addEventListener('change',changeScreen);
 
 })();
 
@@ -202,6 +202,7 @@ function change(){
 	const message = document.getElementById("message");
 	const formOkBtn = document.querySelector(".form_popup_ok_btn");
 	const formPopUp = document.querySelector(".popup_overlay");
+	const submitBtn = document.getElementById('submit_btn'); 
 
 	const submitForm = (e)=>{
 		e.preventDefault();
@@ -244,6 +245,18 @@ function change(){
 		formPopUp.style.display = "none";
 		document.body.style.overflow = "initial";
 	});
+
+	submitBtn.addEventListener('mousedown', (e) => {
+		e.target.style.boxShadow = "none";
+	})
+
+	submitBtn.addEventListener('mouseup', (e) => {
+		e.target.style.boxShadow = 
+		`4px 8px 15px rgba(0 0 0/70%),
+		-1px -1px 5px rgba(0 0 0/20%),
+		-1px 1px 5px rgba(0 0 0/20%),
+		 1px -1px 5px rgba(0 0 0/20%)`;
+	})
 })();
 
 (function(){
