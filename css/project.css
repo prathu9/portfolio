@@ -40,6 +40,7 @@ header{
 	border-bottom:5px solid var(--border-color);
 	background-color: var(--background-color);
 	color:var(--font-color);
+	box-shadow: 5px 5px 40px 25px rgba(0 0 0/70%);
 }
 
 .header-title{
