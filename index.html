@@ -147,12 +147,9 @@
 				</div>
 				<h1><span>Contact</span></h1>
 				<form id="contact_form" method="get" enctype="text/plain">
-					<label>Name:</label>
-					<input id="name" type="text" name="name" required>
-					<label>Email:</label>
-					<input id="email" type="email" name="email" required>
-					<label>Message:</label>
-					<textarea id="message" name="message" required></textarea>
+					<input id="name" type="text" name="name" placeholder="Name" required>
+					<input id="email" type="email" name="email" placeholder="Email" minlength="5" required>
+					<textarea id="message" name="message" placeholder="Message" maxlength="50" required></textarea>
 					<input id="submit_btn" type="submit" value="Submit">
 				</form>
 			</section>

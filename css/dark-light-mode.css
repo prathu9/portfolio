@@ -29,6 +29,7 @@
     align-items:center;
     position:relative;
     z-index:50;
+    margin-right:5px;
 }
 
 .theme-switch-wrapper span{

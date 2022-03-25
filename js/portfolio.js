@@ -131,13 +131,16 @@ function change(){
 		e.target.style.boxShadow = "none";
 	})
 
-	submitBtn.addEventListener('mouseup', (e) => {
+	function addboxShadow(e){
 		e.target.style.boxShadow = 
-		`4px 8px 15px rgba(0 0 0/70%),
+		`1px 1px 2px rgba(0 0 0/70%),
 		-1px -1px 5px rgba(0 0 0/20%),
 		-1px 1px 5px rgba(0 0 0/20%),
 		 1px -1px 5px rgba(0 0 0/20%)`;
-	})
+	}
+
+	submitBtn.addEventListener('mouseup', addboxShadow);
+	submitBtn.addEventListener('mouseout', addboxShadow);
 })();
 
 (function(){
