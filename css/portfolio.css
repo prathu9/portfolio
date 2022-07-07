@@ -98,7 +98,7 @@ header{
 	border-bottom:5px solid var(--border-color); /*#6C70E7*/
 	color:var(--font-color);
 	z-index:-1;
-	box-shadow: 1px 0px 20px 10px rgb(0 0 0 / 70%);
+	box-shadow: 1px 0px 15px 5px rgb(0 0 0 / 70%);
 }
 
 .nav_list a,
