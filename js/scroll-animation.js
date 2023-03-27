@@ -17,6 +17,7 @@ const focusOnScroll = (item, index)=>{
 	when scrolled to that navigation item section 
 	*/
 	window.onscroll=function(){
+		console.log(document.documentElement.scrollTop)
 		if(document.body.scrollTop>50||
 			document.documentElement.scrollTop>50){
 				navUl.className="nav_onscroll";
@@ -35,13 +36,13 @@ const focusOnScroll = (item, index)=>{
 			&&!mobile.matches){
 			focusOnScroll(navList, 1);
 		}
-		if((document.body.scrollTop>1350||
-			document.documentElement.scrollTop>1350)
+		if((document.body.scrollTop>1750||
+			document.documentElement.scrollTop>1750)
 			&&!mobile.matches){
 			focusOnScroll(navList, 2);
 		}
-		if((document.body.scrollTop>1750||
-			document.documentElement.scrollTop>1750)
+		if((document.body.scrollTop>2150||
+			document.documentElement.scrollTop>2150)
 			&&!mobile.matches){
 			focusOnScroll(navList, 3);
 		}
