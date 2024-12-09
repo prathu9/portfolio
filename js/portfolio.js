@@ -48,8 +48,11 @@ function change(){
 		skillsLogoChange(0, "html5Logo", color);
 		skillsLogoChange(1, "css3Logo", color);
 		skillsLogoChange(2, "jsLogo", color);
-		skillsLogoChange(4, "reduxLogo", color);
+		skillsLogoChange(4, "tailwindCSSLogo", color);
+		// skillsLogoChange(4, "reduxLogo", color);
 		skillsLogoChange(5, "reactRouterLogo", color);
+		skillsLogoChange(6, "nextjsLogo", color);
+		skillsLogoChange(7, "nodeLogo", color);
 	}
 
 	const changeLogo = _modifyLogo; //Assiging logo change function to changeLogo from logo library

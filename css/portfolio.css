@@ -385,13 +385,14 @@ header{
 
 /*Skill Section*/
 .keyskillImgContainer{
-	width:100%;
-	max-width:500px;
+	width:fit-content;
+	max-width:600px;
 	margin:auto;
 	padding-bottom:50px;
 	display:flex;
 	justify-content:center;
 	flex-wrap:wrap;
+	gap: 20px;
 }
 
 .keyskillImgContainer img{
@@ -401,6 +402,11 @@ header{
 	width:100px;
 	height:100px;
 	margin:10px;
+	object-fit: contain;
+}
+
+.keyskillImgContainer img:nth-child(5){
+	width: 150px;
 }
 
 .keyskillImgContainer img:nth-child(6){
@@ -952,3 +958,4 @@ label{
 	}
 
 }
+
